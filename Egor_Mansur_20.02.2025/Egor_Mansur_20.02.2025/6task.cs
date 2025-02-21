@@ -10,13 +10,17 @@ namespace Egor_Mansur_20._02._2025
     {
         public static void Execute()
         {
+            Console.Write("Введите целое число: ");
+            int intNumber = int.Parse(Console.ReadLine());
+
             // Неявное преобразование
-            int intNumber = 10;
             double doubleNumber = intNumber;
             Console.WriteLine("Неявное преобразование из int в double: " + doubleNumber);
 
+            Console.Write("Введите число с плавающей точкой: ");
+            double originalDouble = double.Parse(Console.ReadLine());
+
             // Явное преобразование
-            double originalDouble = 9.78;
             int convertedInt = (int)originalDouble;
             Console.WriteLine("Явное преобразование из double в int: " + convertedInt);
         }
